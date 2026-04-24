@@ -1,5 +1,5 @@
 
-import {useState,useRef} from "react"
+import {useState,useEffect,useRef} from "react"
 const RED      = "#DC2626";
 
 import Logo from "./Logo";
@@ -11,6 +11,11 @@ export default function ChatBot() {
     {role:"assistant", content:"Hi! I'm the KYEM assistant. Ask me about our transportation services, construction products, pricing, or delivery options! 🚛"}
   ]);
   const bottomRef = useRef(null);
+  const chatRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+  if (chatRef.current) chatRef.current.scrollTop = chatRef.current.scrollHeight;
+}, [messages]);
 
   
   async function send() {
