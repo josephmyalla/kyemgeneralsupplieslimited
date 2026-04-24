@@ -1,7 +1,6 @@
 import {useState,useEffect} from "react"
 import ImageSlider from "./ImageSlider";
 import {SectionHighlighter} from "./ui/SectionHighLiter"
-const RED      = "#DC2626";
 const BG_BASE  = "#0c0101";
 const Hero =()=>{
 
@@ -47,8 +46,8 @@ const [heroVisible,setHeroVisible] = useState(false);
                       KYEM connects businesses with world-class freight, warehousing, and supply chain solutions — on time, every time.
                     </p>
                     <div className="h-btns flex flex-wrap gap-4">
-                      <a href="#" className="fb font-semibold px-7 py-3.5 rounded-full text-white btn-red">Start Shipping →</a>
-                      <a href="#" className="fb font-medium  px-7 py-3.5 rounded-full btn-out">View Services</a>
+                      <a href="#" className="fb font-semibold px-7 py-3.5 rounded-full text-white btn-red">Get in touch →</a>
+                      <a href="#SERVICES" className="fb font-medium  px-7 py-3.5 rounded-full btn-out">View Services</a>
                     </div>
                   </div>
         
@@ -63,7 +62,7 @@ const [heroVisible,setHeroVisible] = useState(false);
                       <div className="absolute -bottom-2 -right-4 z-30 rounded-2xl px-3 py-2 backdrop-blur-sm"
                         style={{background:"rgba(12,1,1,.75)",border:"1px solid rgba(220,38,38,.35)",animation:"floatP 5s ease-in-out .5s infinite"}}>
                         <p className="fb text-red-400 text-xs font-semibold">🚛 Active Fleet</p>
-                        <p className="fd text-white text-xl font-bold">200+ Vehicles</p>
+                        <p className="fd text-white text-xl font-bold">100+ Vehicles</p>
                       </div>
                       <ImageSlider/>
                     </div>

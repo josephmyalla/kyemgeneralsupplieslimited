@@ -3,7 +3,7 @@ const BG_BASE  = "#0c0101";
 
 const AboutUs =()=>{
     return(
-   <section className="py-24 relative overflow-hidden"
+   <section className="py-24 relative overflow-hidden" id="ABOUTUS"
         style={{background:`linear-gradient(135deg,rgba(127,29,29,.22) 0%,${BG_BASE} 100%)`,borderTop:"1px solid rgba(220,38,38,.11)"}}>
         <div className="absolute right-0 top-0 w-1/2 h-full pointer-events-none"
           style={{background:"radial-gradient(ellipse at right center,rgba(220,38,38,.055) 0%,transparent 70%)"}}/>
@@ -31,7 +31,7 @@ const AboutUs =()=>{
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              {icon:"🌍",title:"East Africa Coverage",val:"47 cities"},
+              {icon:"🌍",title:"East Africa Coverage",val:"5 cities"},
               {icon:"⚡",title:"Express Options",     val:"Same-day"},
               {icon:"🔒",title:"Cargo Insurance",     val:"Full coverage"},
               {icon:"📞",title:"Dedicated Support",   val:"24 / 7"},

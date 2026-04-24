@@ -1,8 +1,7 @@
 import {useState,useEffect } from "react"
-const NAV_LINKS = ["Home", "Services", "About", "Fleet", "Contact"];
+import {NAV_LINKS} from "../../data/navlinks"
 import Logo from "./Logo";
 
-const RED      = "#DC2626";
 const Header =()=>{
     const [scrolled,setScrolled]       = useState(false);
     const [mobileMenu,setMobileMenu]   = useState(false);
@@ -24,7 +23,7 @@ const Header =()=>{
           </div>
           <div className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map(l=>(
-              <a key={l} href="#" className="nav-lk fb text-sm text-white/55 hover:text-white transition-colors">{l}</a>
+              <a key={l.link} href={l.url} className="nav-lk fb text-sm text-white/55 hover:text-white transition-colors">{l.link}</a>
             ))}
           </div>
           <a href="#" className="hidden md:block fb font-semibold text-sm text-white px-5 py-2 rounded-full btn-red">Get Quote</a>
@@ -34,7 +33,7 @@ const Header =()=>{
           <div className="md:hidden absolute top-full left-0 right-0 p-4 space-y-3"
             style={{background:"rgba(12,1,1,.98)",borderTop:"1px solid rgba(220,38,38,.1)"}}>
             {NAV_LINKS.map(l=>(
-              <a key={l} href="#" className="block fb text-white/55 hover:text-white py-2 transition-colors">{l}</a>
+              <a key={l.link} href={l.url} className="block fb text-white/55 hover:text-white py-2 transition-colors">{l.link}</a>
             ))}
           </div>
         )}

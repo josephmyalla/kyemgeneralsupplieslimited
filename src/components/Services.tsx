@@ -3,10 +3,10 @@ import {SectionHighlighter} from "./ui/SectionHighLiter"
 const BG_MID   = "#130202";
 const Services =()=>{
     return(
-        <section id="services" className="py-24 relative" style={{background:BG_MID}}>
+        <section id="SERVICES" className="py-24 relative" style={{background:BG_MID}}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-           <SectionHighlighter  title="What We Do"/>
+           <SectionHighlighter  title="What We Do" spinElement={false}/>
             <h2 className="fd font-extrabold text-5xl md:text-6xl text-white mb-4">
               OUR <span className="shimR">SERVICES</span>
             </h2>
@@ -22,7 +22,7 @@ const Services =()=>{
                 <h3 className="fd font-bold text-xl text-white mb-2">{s.title}</h3>
                 <p className="fb text-white/38 text-sm leading-relaxed">{s.desc}</p>
                 <div className="mt-5 flex items-center gap-1 text-red-400 text-sm fb font-medium">
-                  <span>Learn more</span><span>→</span>
+                 <a href="/#UNDERCONSTRUTION"><span>Learn more</span><span>→</span></a> 
                 </div>
               </div>
             ))}

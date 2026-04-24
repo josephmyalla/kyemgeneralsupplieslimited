@@ -1,8 +1,6 @@
-import { useState, useEffect } from "react";
 import Footer from "./Footer"
 import Header from "./Header";
 import CallToAction from "./CallToAction"
-import {SERVICES} from "../../data/services"
 import Services from "./Services";
 import {STATS} from "../../data/stats"
 import ChatBot from "./Chatbot";
