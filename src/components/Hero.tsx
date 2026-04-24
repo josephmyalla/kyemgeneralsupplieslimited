@@ -46,7 +46,7 @@ const [heroVisible,setHeroVisible] = useState(false);
                       KYEM connects businesses with world-class freight, warehousing, and supply chain solutions — on time, every time.
                     </p>
                     <div className="h-btns flex flex-wrap gap-4">
-                      <a href="#" className="fb font-semibold px-7 py-3.5 rounded-full text-white btn-red">Get in touch →</a>
+                      <a href="#CONTACTUS" className="fb font-semibold px-7 py-3.5 rounded-full text-white btn-red">Get in touch →</a>
                       <a href="#SERVICES" className="fb font-medium  px-7 py-3.5 rounded-full btn-out">View Services</a>
                     </div>
                   </div>

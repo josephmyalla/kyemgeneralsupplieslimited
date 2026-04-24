@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
+import { kyemsvg0, kyemsvg1, kyemsvg2, kyemsvg3 } from '../assets';
 // Placeholder images using picsum.photos
 const branchImages = [
-  "https://picsum.photos/id/104/800/600", // Kibaha
-  "https://picsum.photos/id/96/800/600",  // Morogoro
-  "https://picsum.photos/id/20/800/600",  // Dar es salaam
-  "https://picsum.photos/id/169/800/600", // Mbeya
+  kyemsvg0,kyemsvg1,kyemsvg2,kyemsvg3
 ];
 
 const ContactUsPage = () => {
