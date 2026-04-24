@@ -137,7 +137,7 @@ const ContactUsPage = () => {
                   required
                   value={formData.branch}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                  className="w-full px-4 py-2 border border-gray-300 text-gray-800 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                 >
                   <option value="">Select a branch</option>
                   {branches.map((branch, idx) => (
@@ -187,8 +187,9 @@ const ContactUsPage = () => {
             <div className="p-6">
               <h3 className="text-xl font-bold text-gray-800 mb-3">Why choose Kyem General Supplies?</h3>
               <ul className="space-y-2 text-gray-600">
-                <li className="flex items-center gap-2">✓ Competitive prices for all metals</li>
+                <li className="flex items-center gap-2">✓ Competitive prices for all construction materials and scrap metals</li>
                 <li className="flex items-center gap-2">✓ Construction supplies delivered to your site timely</li>
+                <li className="flex items-center gap-2">✓ Just give us a call and location we reach you site to collect the scrap and give you cash</li>
                 <li className="flex items-center gap-2">✓ We have enough vehicles to serve you</li>
               </ul>
             </div>

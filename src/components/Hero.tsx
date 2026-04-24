@@ -1,17 +1,8 @@
-import {useState,useEffect} from "react"
 import ImageSlider from "./ImageSlider";
 import {SectionHighlighter} from "./ui/SectionHighLiter"
 const BG_BASE  = "#0c0101";
 const Hero =()=>{
 
-const [heroVisible,setHeroVisible] = useState(false);
-
-  useEffect(()=>{
-    const fn=()=>setScrolled(window.scrollY>40);
-    window.addEventListener("scroll",fn);
-    setTimeout(()=>setHeroVisible(true),100);
-    return ()=>window.removeEventListener("scroll",fn);
-  },[]);
 
     return(
         <section className="relative min-h-screen flex items-center overflow-hidden dot-bg"
@@ -33,7 +24,7 @@ const [heroVisible,setHeroVisible] = useState(false);
                 </div>
         
                 <div className="max-w-7xl mx-auto px-6 pt-28 pb-20 grid md:grid-cols-2 gap-12 items-center relative z-10">
-                  <div className={heroVisible?"":"invisible"}>
+                  <div className="">
                     <div className="h-title">
                     <SectionHighlighter title="Delivering Excellence Nationwide" spinElement={true}/>
                       <h1 className="fd font-extrabold leading-none mb-4" style={{fontSize:"clamp(3rem,7vw,5.5rem)"}}>
@@ -51,7 +42,7 @@ const [heroVisible,setHeroVisible] = useState(false);
                     </div>
                   </div>
         
-                  <div className={`h-truck w-full ${heroVisible?"":"invisible"}`}>
+                  <div className={`h-truck w-full}`}>
                     <div className="relative">
                       {/* Floating stat badges */}
                       <div className="absolute -top-5 -left-4 z-30 rounded-2xl px-3 py-2 backdrop-blur-sm"

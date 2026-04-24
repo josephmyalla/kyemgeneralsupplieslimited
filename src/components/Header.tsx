@@ -25,7 +25,7 @@ const Header =()=>{
               <a key={l.link} href={l.url} className="nav-lk fb text-sm text-white/55 hover:text-white transition-colors">{l.link}</a>
             ))}
           </div>
-          <a href="#" className="hidden md:block fb font-semibold text-sm text-white px-5 py-2 rounded-full btn-red">Get in touch</a>
+          <a href="#CONTACTUS" className="hidden md:block fb font-semibold text-sm text-white px-5 py-2 rounded-full btn-red">Get in touch</a>
           <button className="md:hidden text-white text-xl" onClick={()=>setMobileMenu(o=>!o)}>☰</button>
         </div>
         {mobileMenu && (

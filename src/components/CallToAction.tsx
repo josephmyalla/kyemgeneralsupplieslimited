@@ -10,7 +10,7 @@ const CallToAction =()=>{
             Get a custom freight or supply quote in under 5 minutes. No commitment required.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="#" className="fb font-bold px-8 py-4 rounded-full text-white text-lg btn-red">Get in touch →</a>
+            <a href="#CONTACTUS" className="fb font-bold px-8 py-4 rounded-full text-white text-lg btn-red">Get in touch →</a>
            </div>
         </div>
       </section>

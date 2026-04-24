@@ -1,5 +1,5 @@
 
-import {useState,useEffect,useRef} from "react"
+import {useState,useRef} from "react"
 const RED      = "#DC2626";
 
 import Logo from "./Logo";
@@ -12,8 +12,7 @@ export default function ChatBot() {
   ]);
   const bottomRef = useRef(null);
 
-  useEffect(()=>{ if(open) bottomRef.current?.scrollIntoView({behavior:"smooth"}); },[messages,open]);
-
+  
   async function send() {
     if (!input.trim()||loading) return;
     const userMsg = {role:"user", content:input.trim()};
@@ -24,9 +23,9 @@ export default function ChatBot() {
         method:"POST", headers:{"Content-Type":"application/json"},
         body: JSON.stringify({
           model:"claude-sonnet-4-20250514", max_tokens:1000,
-          system:`You are a helpful assistant for SwiftHaul & Supplies Co., a professional transportation and general supplies company.
+          system:`You are a helpful assistant for Kyem General Supplies Limited., a professional transportation and general supplies company.
 Help with: freight, last-mile delivery, warehousing, industrial supplies, customs, fleet. Be concise, friendly, professional (≤3 sentences unless asked for more).
-Highlights: 12K+ monthly deliveries, 98.4% on-time, 47 destinations, 200+ vehicles.`,
+Highlights: 12K+ monthly deliveries, 98.4% on-time, 20 destinations, 100+ vehicles.`,
           messages: next.map(m=>({role:m.role,content:m.content})),
         }),
       });
