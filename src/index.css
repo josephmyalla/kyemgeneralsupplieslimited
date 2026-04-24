@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Playfair+Display:wght@400;700;900&display=swap');
+
+
+
+@layer components {
+  .btn-primary {
+   @apply bg-gold text-dark-text font-bold py-3 px-8 rounded-full transition-all duration-300 hover:bg-[#e09d2c] hover:-translate-y-1 hover:shadow-lg inline-flex items-center gap-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-deep-green text-deep-green font-semibold py-3 px-7 rounded-full transition-all duration-200 hover:bg-deep-green hover:text-white;
+  }
+
+   .feature-card {
+    @apply bg-white rounded-3xl p-7 shadow-md transition-all duration-300 text-center border-b-4 border-gold hover:-translate-y-2 hover:shadow-xl;
+  }
+
+  .input-text {
+    @apply bg-gray-white
+  }
+}
