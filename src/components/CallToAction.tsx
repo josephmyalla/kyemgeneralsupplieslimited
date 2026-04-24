@@ -11,8 +11,7 @@ const CallToAction =()=>{
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="#" className="fb font-bold px-8 py-4 rounded-full text-white text-lg btn-red">Get in touch →</a>
-            <a href="#" className="fb font-medium px-8 py-4 rounded-full btn-out">📞 Call Us Now</a>
-          </div>
+           </div>
         </div>
       </section>
     )

@@ -21,9 +21,9 @@ const AboutUs =()=>{
               Our vertically integrated model means one partner for freight, supplies, and warehousing — saving you time, cost, and complexity.
             </p>
             <div className="mt-8 flex flex-wrap gap-5">
-              {[{c:"#DC2626",l:"ISO 9001:2015 Certified"},{c:"#22c55e",l:"24/7 Operations"},{c:"#38bdf8",l:"GPS Tracked Fleet"}].map((b,i)=>(
+              {[{c:"#22c55e",l:"24/7 Operations"}].map((b,i)=>(
                 <div key={i} className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full" style={{background:b.c}}/>
+                  <div className="w-2 h-2 rounded-full animate-spin" style={{background:b.c}}/>
                   <span className="fb text-white/55 text-sm">{b.l}</span>
                 </div>
               ))}
