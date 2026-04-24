@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 // Placeholder images using picsum.photos
 const branchImages = [
-  "https://picsum.photos/id/104/800/600", // NYC - Architecture
-  "https://picsum.photos/id/96/800/600",  // London - Bridge
-  "https://picsum.photos/id/20/800/600",  // Tokyo - City
-  "https://picsum.photos/id/169/800/600", // LA - Sunset
+  "https://picsum.photos/id/104/800/600", // Kibaha
+  "https://picsum.photos/id/96/800/600",  // Morogoro
+  "https://picsum.photos/id/20/800/600",  // Dar es salaam
+  "https://picsum.photos/id/169/800/600", // Mbeya
 ];
 
 const ContactUsPage = () => {
@@ -12,7 +12,8 @@ const ContactUsPage = () => {
     name: '',
     email: '',
     branch: '',
-    message: ''
+    message: '',
+    phone:'',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -26,46 +27,46 @@ const ContactUsPage = () => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     alert('Thank you for your message! We will get back to you soon.');
-    setFormData({ name: '', email: '', branch: '', message: '' });
+    setFormData({ name: '', email: '', branch: '', message: '',phone:''});
   };
 
   const branches = [
     {
-      name: "New York",
-      address: "123 Scrap Metal Ave, Brooklyn, NY 11201",
-      phone: "+1 (212) 555-1234",
-      email: "ny@scrapmaster.com",
+      name: "Kibaha",
+      address: "P.O Box 123 Pwani",
+      phone: "+255 777 555-234",
+      email: "kibaha@kyemgeneralsupplies.co.tz",
       hours: "Mon-Fri: 8am-6pm, Sat: 9am-2pm",
       image: branchImages[0]
     },
     {
-      name: "London",
-      address: "45 Recycle Lane, Shoreditch, London E1 6AW",
-      phone: "+44 20 7946 0123",
-      email: "london@scrapmaster.com",
+      name: "Morogoro",
+      address: "P.O Box 2223 Morogoro",
+      phone: "+255 777 555-234",
+      email: "morogoro@kyemgeneralsupplies.co.tz",
       hours: "Mon-Fri: 8am-6pm, Sat: 9am-2pm",
       image: branchImages[1]
     },
     {
-      name: "Tokyo",
-      address: "2-7-3 Shibuya, Tokyo 150-0002",
-      phone: "+81 3-1234-5678",
-      email: "tokyo@scrapmaster.com",
+      name: "Mbeya",
+      address: "P.O Box 2223 Mbeya",
+      phone: "255 777 555-234",
+      email: "mbeya@kyemgeneralsupplies.co.tz",
       hours: "Mon-Fri: 8am-6pm, Sat: 9am-2pm",
       image: branchImages[2]
     },
     {
-      name: "Los Angeles",
-      address: "789 Industrial Dr, Downtown LA, CA 90001",
-      phone: "+1 (213) 555-9876",
-      email: "la@scrapmaster.com",
+      name: "Lilongwe",
+      address: "P.o Box 789 Lilongwe Malawi",
+      phone: "+255 777 555-976",
+      email: "lilongwe@kyemgeneralsupplies.co.tz",
       hours: "Mon-Fri: 7am-7pm, Sat: 8am-3pm",
       image: branchImages[3]
     }
   ];
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div id="CONTACTUS" className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -73,7 +74,7 @@ const ContactUsPage = () => {
             Contact Us
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Get in touch with our team or visit one of our branches near you. We're here to answer all your scrap metal questions.
+            Get in touch with our team or visit one of our branches near you. We're here to answer all your logistics, construction and scrap metal questions.
           </p>
         </div>
 
@@ -108,6 +109,21 @@ const ContactUsPage = () => {
                   id="email"
                   required
                   value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                  placeholder="john@example.com"
+                />
+              </div>
+                            <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                  Phone *
+                </label>
+                <input
+                  type="phone"
+                  name="phone"
+                  id="phone"
+                  required
+                  value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                   placeholder="john@example.com"
@@ -171,12 +187,11 @@ const ContactUsPage = () => {
               </div>
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-800 mb-3">Why choose ScrapMaster?</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-3">Why choose Kyem General Supplies?</h3>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2">✓ Competitive prices for all metals</li>
-                <li className="flex items-center gap-2">✓ Eco-friendly recycling practices</li>
-                <li className="flex items-center gap-2">✓ Instant payment & free weighing</li>
-                <li className="flex items-center gap-2">✓ 24/7 drop-off available at select branches</li>
+                <li className="flex items-center gap-2">✓ Construction supplies delivered to your site timely</li>
+                <li className="flex items-center gap-2">✓ We have enough vehicles to serve you</li>
               </ul>
             </div>
           </div>
@@ -213,12 +228,6 @@ const ContactUsPage = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Footer / Additional Info */}
-        <div className="mt-16 border-t border-gray-200 pt-8 text-center text-gray-500 text-sm">
-          <p>© 2025 ScrapMaster Metals. All rights reserved. | Headquarters: 123 Scrap Metal Ave, Brooklyn, NY</p>
-          <p className="mt-2">Emergency scrap pickup? Call our 24/7 hotline: <span className="font-semibold text-gray-700">+1 (800) 555-9999</span></p>
         </div>
       </div>
     </div>

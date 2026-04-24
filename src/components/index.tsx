@@ -6,6 +6,7 @@ import {STATS} from "../../data/stats"
 import ChatBot from "./Chatbot";
 import Hero from "./Hero"
 import AboutUs from "./AboutUs";
+import ContactUsPage from "./Contact";
 
 const RED      = "#DC2626";
 const BG_BASE  = "#0c0101";
@@ -86,9 +87,9 @@ export default function App() {
       <AboutUs />
       {/* CTA */}
       <CallToAction/>
+      <ContactUsPage/>
       {/* FOOTER */}
        <Footer/>
-
       <ChatBot/>
     </div>
   );

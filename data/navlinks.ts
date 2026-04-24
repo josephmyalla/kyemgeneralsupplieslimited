@@ -1,1 +1,1 @@
-export const NAV_LINKS = [{link:"Home",url:"/"},{ link:"Services",url:"#SERVICES"}, {link:"About",url:"#ABOUTUS"}, {link:"Contact",url:"#CONTACT"}];
+export const NAV_LINKS = [{link:"Home",url:"/"},{ link:"Services",url:"#SERVICES"}, {link:"About",url:"#ABOUTUS"}, {link:"Contact",url:"#CONTACTUS"}];
