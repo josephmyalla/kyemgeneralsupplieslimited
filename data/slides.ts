@@ -6,8 +6,8 @@ export const SLIDES = [
   },
   {
     url: "https://images.unsplash.com/photo-1519003300449-424ad0405076?w=900&q=80&fit=crop",
-    caption: "Fleet-Powered Precision",
-    sub: "200+ vehicles always on the move",
+    caption: "We handle you cargo while to keep you relaxed",
+    sub: "100+ vehicles always on the move",
   },
   {
     url: "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=900&q=80&fit=crop",
@@ -17,11 +17,11 @@ export const SLIDES = [
   {
     url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80&fit=crop",
     caption: "Heavy Cargo Specialists",
-    sub: "Industrial & commercial loads, handled safely",
+    sub: "Residential, Industrial & commercial loads, handled safely",
   },
   {
     url: "https://images.unsplash.com/photo-1473445730015-841f29a9490b?w=900&q=80&fit=crop",
     caption: "Open Roads, Closed Deals",
-    sub: "Swift delivery across 47 destinations",
+    sub: "KYEM delivery across 15 destinations",
   },
 ];
