@@ -6,7 +6,7 @@ export const SLIDES = [
   },
   {
     url: "https://images.unsplash.com/photo-1519003300449-424ad0405076?w=900&q=80&fit=crop",
-    caption: "We handle your cargo 24/7, giving time to relax and work with your core business",
+    caption: "We handle your cargo 24/7, giving time to relax and work on your core business",
     sub: "100+ vehicles always on the move",
   },
   {
